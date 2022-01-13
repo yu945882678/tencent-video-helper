@@ -8,9 +8,9 @@ on:
 env:
   RUN_ENV: 'prod'
   TZ: 'Asia/Shanghai'
-  SCKEY: ${{ secrets.SCKEY }}
-  AUTH_REFRESH_URL: ${{ secrets.AUTH_REFRESH_URL }}
-  AUTH_REFRESH_COOKIE: ${{ secrets.AUTH_REFRESH_COOKIE }}
+  SCKEY: 'SCT112429TzjV9Tslq3mcz7vOSnP18r6Tu'
+  AUTH_REFRESH_URL: 'https://access.video.qq.com/user/auth_refresh?vappid=11059694&vsecret=fdf61a6be0aad57132bc5cdf78ac30145b6cd2c1470b0cfe&type=qq&g_tk=&g_vstk=389392180&g_actk=190021757&callback=jQuery191046050553766486635_1642063768529&_=1642063768530'
+  AUTH_REFRESH_COOKIE: 'RK=2bww4GlqOu; ptcz=daa625a99e46a841865a0a884ca7112dd0ffd03c4745a9b1150be0ee051339eb; pgv_pvid=4290375634; pac_uid=0_584bcd886d350; _qpsvr_localtk=0.3902973230445379; tvfe_boss_uuid=80ecfd31cd12df39; video_guid=e1c15f4174872d34; video_platform=2; pgv_info=ssid=s4955639462; main_login=qq; vqq_access_token=7DFDFADBEB77B5D241EE880EDF5E7A2B; vqq_appid=101483052; vqq_openid=742E521EBABA2FC79A485097C17F3FBF; vqq_vuserid=179056210; vqq_vusession=tellP8xRWGEZFCtCKW5CRg..; vqq_refresh_token=82F3E333F91ED6957CE9A2A422C99B42; login_time_init=2022-1-13 16:43:54; uid=252639286; verifysession=h0111e2898e7b575375f2704dc61412e69b844d5ac8ed2bc8e1806b2ea86eb18cbbc478668e2a9eec97; vqq_next_refresh_time=6274; vqq_login_time_init=1642063733; login_time_last=2022-1-13 16:49:20'
 
 jobs:
   build:
