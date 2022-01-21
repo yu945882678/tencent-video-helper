@@ -54,10 +54,10 @@ def notify(title, message):
     # url = 'https://sctapi.ftqq.com/{}.send?{}&{}'.format(CONFIG.SCKEY, urlencode({'title': title}), urlencode({'desp': message}))
     url = CONFIG.SCKEY
     data = {
-        msgtype: "markdown",
-        markdown: {
-          title: title,
-          text: message
+        "msgtype": "markdown",
+        "markdown": {
+          "title": title,
+          "text": message
         }
     }
     try:
