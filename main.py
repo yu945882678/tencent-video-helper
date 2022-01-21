@@ -122,7 +122,7 @@ def main():
         'ret': sign_obj['ret'],
         'nick': decode_urldecode(auth_refresh_obj['nick']),
         'message': sign_obj['msg'],
-        'checkin_score': sign_obj.get('checkin_score', 0) or "👀 今日已签到了哦"
+        'checkin_score': sign_obj.get('checkin_score', 0) or "今日已签到了哦"
 
     })
     # TODO 手机签到失败不会重置任务状态
