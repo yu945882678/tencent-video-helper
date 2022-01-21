@@ -50,7 +50,7 @@ log.basicConfig(level=CONFIG.LOG_LEVEL)
 
 MESSGAE_TEMPLATE = '''
 ```
-### 腾讯视频任务结果：[{nick}] \n > #### 签到积分：{checkin_score} \n > #### 签到结果：{message} \n > #### 手机签到：{mobile_checkin} \n
+腾讯视频任务结果：[{nick}] \n > 签到积分：{checkin_score} \n > 签到结果：{message} \n > 手机签到：{mobile_checkin} \n
 
 ```'''
 
