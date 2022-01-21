@@ -61,7 +61,8 @@ def notify(title, message):
         }
     }
     try:
-        response = to_python(requests.post(url,data=datas).text)
+        response = to_python(requests.post(url,param=datas).text)
+        log.info(response)
         # {"code":0,"message":"","data":{"pushid":"1111","readkey":"xxxx","error":"SUCCESS","errno":0}}
         log.info('推送结果: {}'.format(response.get('data', {'error': 'no data'}).get('error', '')))
     except Exception as e:
