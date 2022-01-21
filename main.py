@@ -53,7 +53,7 @@ def notify(title, message):
     urlencode = urllib.parse.urlencode
     # url = 'https://sctapi.ftqq.com/{}.send?{}&{}'.format(CONFIG.SCKEY, urlencode({'title': title}), urlencode({'desp': message}))
     url = CONFIG.SCKEY
-    data = {
+    datas = {
         "msgtype": "markdown",
         "markdown": {
           "title": title,
@@ -61,7 +61,7 @@ def notify(title, message):
         }
     }
     try:
-        response = to_python(requests.post(url,data).text)
+        response = to_python(requests.post(url,data=datas).text)
         log.info(response)
         # {"code":0,"message":"","data":{"pushid":"1111","readkey":"xxxx","error":"SUCCESS","errno":0}}
         log.info('推送结果: {}'.format(response.get('data', {'error': 'no data'}).get('error', '')))
