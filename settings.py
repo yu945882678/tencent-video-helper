@@ -29,6 +29,10 @@ class _Config:
     SIGN_URL = 'https://vip.video.qq.com/fcgi-bin/comm_cgi?name=hierarchical_task_system&cmd=2'
     MOBILE_CHECKIN = 'http://v.qq.com/x/bu/mobile_checkin?isDarkMode=0&uiType=REGULAR'
     SCKEY = os.environ.get('SCKEY', '')
+    AGENTID = os.environ.get('AGENTID', '')
+    CORPID = os.environ.get('CORPID', '')
+    TOUSER = os.environ.get('TOUSER', '')
+    USER = os.environ.get('USER', '')
 
 
 class ProductionConfig(_Config):
