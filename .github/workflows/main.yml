@@ -11,7 +11,10 @@ env:
   SCKEY: ${{ secrets.SCKEY }}
   AUTH_REFRESH_URL: ${{ secrets.AUTH_REFRESH_URL }}
   AUTH_REFRESH_COOKIE: ${{ secrets.AUTH_REFRESH_COOKIE }}
-
+  AGENTID: ${{ secrets.AGENTID }}
+  CORPID: ${{ secrets.CORPID }}
+  SECRET: ${{ secrets.SECRET }}
+  TOUSER: ${{ secrets.TOUSER }}
 jobs:
   build:
     runs-on: ubuntu-latest
